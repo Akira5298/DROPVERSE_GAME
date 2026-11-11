@@ -1,0 +1,103 @@
+{
+  "tracks": [
+    {
+      "file": "Shapes+Within+the+Jade.mp3",
+      "title": "Shapes Within the Jade",
+      "artist": "Nihilore",
+      "license": {
+        "name": "CC BY (check version on the source page: 3.0 or 4.0)",
+        "url": "https://nihilore.com",
+        "attribution": "\"Shapes Within the Jade\" by Nihilore (nihilore.com), licensed under Creative Commons Attribution",
+        "commercialUse": true,
+        "modificationAllowed": true
+      },
+      "cleared": false
+    },
+    {
+      "file": "Atomic+Fire+Light.mp3",
+      "title": "Atomic Fire Light",
+      "artist": "Nihilore",
+      "license": {
+        "name": "CC BY (check version on the source page: 3.0 or 4.0)",
+        "url": "https://nihilore.com",
+        "attribution": "\"Atomic Fire Light\" by Nihilore (nihilore.com), licensed under Creative Commons Attribution",
+        "commercialUse": true,
+        "modificationAllowed": true
+      },
+      "cleared": false
+    },
+    {
+      "file": "Sturgeon's+Law.mp3",
+      "title": "Sturgeon's Law",
+      "artist": "Nihilore",
+      "license": {
+        "name": "CC BY (check version on the source page: 3.0 or 4.0)",
+        "url": "https://nihilore.com",
+        "attribution": "\"Sturgeon's Law\" by Nihilore (nihilore.com), licensed under Creative Commons Attribution",
+        "commercialUse": true,
+        "modificationAllowed": true
+      },
+      "cleared": false
+    },
+    {
+      "file": "Four+and+a+Half+Tatami.mp3",
+      "title": "Four and a Half Tatami",
+      "artist": "Nihilore",
+      "license": {
+        "name": "CC BY (check version on the source page: 3.0 or 4.0)",
+        "url": "https://nihilore.com",
+        "attribution": "\"Four and a Half Tatami\" by Nihilore (nihilore.com), licensed under Creative Commons Attribution",
+        "commercialUse": true,
+        "modificationAllowed": true
+      },
+      "cleared": false
+    },
+    {
+      "file": "Laconic.mp3",
+      "title": "Laconic",
+      "artist": "Nihilore",
+      "license": {
+        "name": "CC BY (check version on the source page: 3.0 or 4.0)",
+        "url": "https://nihilore.com",
+        "attribution": "\"Laconic\" by Nihilore (nihilore.com), licensed under Creative Commons Attribution",
+        "commercialUse": true,
+        "modificationAllowed": true
+      },
+      "cleared": false
+    },
+    {
+      "file": "A+Different+World+By+Night.mp3",
+      "title": "A Different World By Night",
+      "artist": "Nihilore",
+      "license": {
+        "name": "CC BY (check version on the source page: 3.0 or 4.0)",
+        "url": "https://nihilore.com",
+        "attribution": "\"A Different World By Night\" by Nihilore (nihilore.com), licensed under Creative Commons Attribution",
+        "commercialUse": true,
+        "modificationAllowed": true
+      },
+      "cleared": false
+    },
+    {
+      "file": "Solipsism.mp3",
+      "title": "Solipsism",
+      "artist": "Nihilore",
+      "license": {
+        "name": "CC BY (check version on the source page: 3.0 or 4.0)",
+        "url": "https://nihilore.com",
+        "attribution": "\"Solipsism\" by Nihilore (nihilore.com), licensed under Creative Commons Attribution",
+        "commercialUse": true,
+        "modificationAllowed": true
+      },
+      "cleared": false
+    },
+    {
+      "file": "DarkDnB_1.wav",
+      "genre": "drumAndBass",
+      "license": {
+        "name": "UNKNOWN \u2014 record the pack's license here"
+      },
+      "cleared": false
+    }
+  ]
+}

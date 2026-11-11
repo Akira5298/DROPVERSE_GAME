@@ -1,0 +1,2514 @@
+{
+ "version": 1,
+ "notes": "x and w are in beats from the pattern start (150 pt per beat at speed 1). y and h are points above the floor (playfield 0-450). period/phase/on/dur are in beats. difficulty: 1 Challenging, 2 Hard, 3 Very Hard, 4 Expert.",
+ "patterns": [
+  {
+   "id": "cube.spike_rhythm",
+   "name": "Spike Rhythm",
+   "difficulty": 1,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.45,
+   "tags": [
+    "static",
+    "spikes"
+   ],
+   "objects": [
+    {
+     "type": "spike",
+     "x": 1.0,
+     "count": 1
+    },
+    {
+     "type": "spike",
+     "x": 2.5,
+     "count": 2
+    },
+    {
+     "type": "spike",
+     "x": 4.0,
+     "count": 1
+    },
+    {
+     "type": "spike",
+     "x": 5.5,
+     "count": 3
+    },
+    {
+     "type": "notehazard",
+     "x": 3.3,
+     "w": 0.5,
+     "y": 125,
+     "h": 18
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 0.25,
+     "hold": 0.107,
+     "window": 0.25,
+     "action": "jump"
+    },
+    {
+     "beat": 1.827,
+     "hold": 0.107,
+     "window": 0.12,
+     "action": "jump"
+    },
+    {
+     "beat": 3.75,
+     "hold": 0.107,
+     "window": 0.06,
+     "action": "jump"
+    },
+    {
+     "beat": 5.25,
+     "hold": 4.8,
+     "window": 0.1,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "cube.block_stairs",
+   "name": "Block Stairs",
+   "difficulty": 1,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.45,
+   "tags": [
+    "static",
+    "blocks",
+    "spikes"
+   ],
+   "objects": [
+    {
+     "type": "block",
+     "x": 1.0,
+     "w": 1.0,
+     "h": 50
+    },
+    {
+     "type": "block",
+     "x": 2.5,
+     "w": 1.2,
+     "h": 100
+    },
+    {
+     "type": "spike",
+     "x": 2.75,
+     "y": 100,
+     "count": 1
+    },
+    {
+     "type": "spike",
+     "x": 3.7,
+     "count": 3
+    },
+    {
+     "type": "block",
+     "x": 5.6,
+     "w": 1.0,
+     "h": 60
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "cube.double_spike_lift",
+   "name": "Double Spike + Lift",
+   "difficulty": 1,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.45,
+   "tags": [
+    "moving",
+    "platform",
+    "pit",
+    "spikes"
+   ],
+   "objects": [
+    {
+     "type": "spike",
+     "x": 0.8,
+     "count": 2
+    },
+    {
+     "type": "pit",
+     "x": 2.5,
+     "w": 2.6
+    },
+    {
+     "type": "mblock",
+     "x": 3.1,
+     "w": 1.0,
+     "y": 40,
+     "h": 20,
+     "move": {
+      "axis": "y",
+      "amp": 35,
+      "period": 2,
+      "phase": 0
+     }
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 0.25,
+     "hold": 9.493,
+     "window": 0.25,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "cube.pad_launch",
+   "name": "Pad Launch",
+   "difficulty": 1,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.45,
+   "tags": [
+    "interactive",
+    "pad",
+    "platform"
+   ],
+   "objects": [
+    {
+     "type": "pad",
+     "x": 1.2,
+     "kind": "yellow"
+    },
+    {
+     "type": "block",
+     "x": 2.3,
+     "w": 2.0,
+     "y": 140,
+     "h": 26,
+     "style": "note"
+    },
+    {
+     "type": "spike",
+     "x": 1.8,
+     "count": 9
+    },
+    {
+     "type": "spike",
+     "x": 6.0,
+     "count": 1
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 5.5,
+     "hold": 4.267,
+     "window": 0.25,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "cube.snare_lasers",
+   "name": "Snare Lasers",
+   "difficulty": 1,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.45,
+   "tags": [
+    "music",
+    "laser",
+    "spikes"
+   ],
+   "objects": [
+    {
+     "type": "laser",
+     "x": 0.5,
+     "w": 6.5,
+     "y": 66,
+     "h": 10,
+     "period": 4,
+     "on": 0,
+     "dur": 0.5,
+     "orientation": "horizontal"
+    },
+    {
+     "type": "spike",
+     "x": 1.8,
+     "count": 1
+    },
+    {
+     "type": "spike",
+     "x": 5.3,
+     "count": 2
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.5,
+     "hold": 2.027,
+     "window": 0.15,
+     "action": "jump"
+    },
+    {
+     "beat": 5.0,
+     "hold": 4.907,
+     "window": 0.15,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "cube.saw_narrow_landing",
+   "name": "Saw + Narrow Landing",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "moving",
+    "saw",
+    "pit",
+    "narrow"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 2.0,
+     "w": 2.6
+    },
+    {
+     "type": "block",
+     "x": 3.1,
+     "w": 0.5,
+     "y": -120,
+     "h": 160,
+     "style": "pillar"
+    },
+    {
+     "type": "saw",
+     "x": 3.35,
+     "y": 175,
+     "r": 34
+    },
+    {
+     "type": "saw",
+     "x": 6.0,
+     "y": 70,
+     "r": 30,
+     "move": {
+      "axis": "y",
+      "amp": 50,
+      "period": 2,
+      "phase": 0.5
+     }
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.75,
+     "hold": 0.107,
+     "window": 0.23,
+     "action": "jump"
+    },
+    {
+     "beat": 3.5,
+     "hold": 0.107,
+     "window": 0.17,
+     "action": "jump"
+    },
+    {
+     "beat": 5.25,
+     "hold": 4.587,
+     "window": 0.25,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "cube.orb_spike_bed",
+   "name": "Orb Over Spike Bed",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "interactive",
+    "orb",
+    "spikes",
+    "elevated"
+   ],
+   "objects": [
+    {
+     "type": "spike",
+     "x": 1.9,
+     "count": 7
+    },
+    {
+     "type": "orb",
+     "x": 2.75,
+     "y": 95,
+     "kind": "yellow"
+    },
+    {
+     "type": "block",
+     "x": 5.3,
+     "w": 1.6,
+     "h": 70
+    },
+    {
+     "type": "spike",
+     "x": 5.95,
+     "y": 70,
+     "count": 1
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.673,
+     "hold": 0.32,
+     "window": 0.07,
+     "action": "jump"
+    },
+    {
+     "beat": 3.003,
+     "hold": 7.04,
+     "window": 0.06,
+     "action": "orb"
+    }
+   ]
+  },
+  {
+   "id": "cube.pendulums",
+   "name": "Pendulums",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "moving",
+    "pendulum"
+   ],
+   "objects": [
+    {
+     "type": "pendulum",
+     "x": 2.4,
+     "y": 430,
+     "len": 360,
+     "r": 30,
+     "amp": 40,
+     "period": 4,
+     "phase": 0
+    },
+    {
+     "type": "spike",
+     "x": 3.9,
+     "count": 1
+    },
+    {
+     "type": "pendulum",
+     "x": 5.6,
+     "y": 430,
+     "len": 360,
+     "r": 30,
+     "amp": 40,
+     "period": 4,
+     "phase": 2
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "cube.beat_gates",
+   "name": "Beat Gates + Platforms",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "music",
+    "gate",
+    "platform"
+   ],
+   "objects": [
+    {
+     "type": "gate",
+     "x": 1.8,
+     "w": 0.2,
+     "y": 0,
+     "h": 80,
+     "period": 2,
+     "on": 0,
+     "dur": 1.2,
+     "phase": 0.6
+    },
+    {
+     "type": "block",
+     "x": 3.0,
+     "w": 1.0,
+     "h": 70,
+     "style": "note"
+    },
+    {
+     "type": "gate",
+     "x": 4.6,
+     "w": 0.2,
+     "y": 90,
+     "h": 360,
+     "period": 2,
+     "on": 0,
+     "dur": 1.2,
+     "phase": 0.0
+    },
+    {
+     "type": "block",
+     "x": 5.6,
+     "w": 1.0,
+     "h": 90,
+     "style": "note"
+    },
+    {
+     "type": "spike",
+     "x": 6.6,
+     "count": 2
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "cube.note_hop",
+   "name": "MIDI Note Hop",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "music",
+    "notes",
+    "pit",
+    "platform"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 1.4,
+     "w": 5.4
+    },
+    {
+     "type": "block",
+     "x": 2.0,
+     "w": 0.8,
+     "y": 30,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "block",
+     "x": 3.3,
+     "w": 0.8,
+     "y": 80,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "notehazard",
+     "x": 3.3,
+     "w": 0.8,
+     "y": 230,
+     "h": 18
+    },
+    {
+     "type": "block",
+     "x": 4.6,
+     "w": 0.8,
+     "y": 50,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "block",
+     "x": 5.8,
+     "w": 0.8,
+     "y": 90,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "notehazard",
+     "x": 5.0,
+     "w": 0.6,
+     "y": 210,
+     "h": 18
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.25,
+     "hold": 0.107,
+     "window": 0.25,
+     "action": "jump"
+    },
+    {
+     "beat": 2.897,
+     "hold": 0.213,
+     "window": 0.06,
+     "action": "jump"
+    },
+    {
+     "beat": 5.427,
+     "hold": 4.587,
+     "window": 0.07,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "cube.bass_walls",
+   "name": "Bass Walls",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "music",
+    "bass"
+   ],
+   "objects": [
+    {
+     "type": "basswall",
+     "x": 1.8,
+     "w": 0.35,
+     "hmin": 0,
+     "hmax": 80,
+     "period": 2,
+     "phase": 1.0
+    },
+    {
+     "type": "basswall",
+     "x": 3.8,
+     "w": 0.35,
+     "hmin": 0,
+     "hmax": 80,
+     "period": 2,
+     "phase": 1.0
+    },
+    {
+     "type": "basswall",
+     "x": 5.8,
+     "w": 0.35,
+     "hmin": 10,
+     "hmax": 90,
+     "period": 2,
+     "phase": 1.0
+    },
+    {
+     "type": "spike",
+     "x": 6.9,
+     "count": 1
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.363,
+     "hold": 3.84,
+     "window": 0.07,
+     "action": "jump"
+    },
+    {
+     "beat": 6.5,
+     "hold": 3.307,
+     "window": 0.08,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "cube.gravity_flip",
+   "name": "Gravity Flip",
+   "difficulty": 2,
+   "beats": 10,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "interactive",
+    "gravity",
+    "spikes"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 1.0,
+     "kind": "gravityFlip"
+    },
+    {
+     "type": "spike",
+     "x": 3.6,
+     "y": 450,
+     "count": 2,
+     "dir": "down"
+    },
+    {
+     "type": "spike",
+     "x": 5.3,
+     "y": 450,
+     "count": 1,
+     "dir": "down"
+    },
+    {
+     "type": "portal",
+     "x": 6.8,
+     "kind": "gravityNormal"
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "cube.crushers",
+   "name": "Crushers + Alternating Walls",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.35,
+   "tags": [
+    "moving",
+    "crusher",
+    "walls"
+   ],
+   "objects": [
+    {
+     "type": "mhazard",
+     "x": 1.8,
+     "w": 0.35,
+     "y": 0,
+     "h": 60,
+     "move": {
+      "axis": "y",
+      "amp": 55,
+      "period": 2,
+      "phase": 1.0
+     }
+    },
+    {
+     "type": "mhazard",
+     "x": 3.6,
+     "w": 0.3,
+     "y": 150,
+     "h": 40,
+     "move": {
+      "axis": "x",
+      "amp": 60,
+      "period": 2,
+      "phase": 0
+     }
+    },
+    {
+     "type": "mhazard",
+     "x": 5.0,
+     "w": 0.3,
+     "y": 200,
+     "h": 250,
+     "move": {
+      "axis": "y",
+      "amp": 120,
+      "period": 2,
+      "phase": 0
+     }
+    },
+    {
+     "type": "mhazard",
+     "x": 5.8,
+     "w": 0.3,
+     "y": 200,
+     "h": 250,
+     "move": {
+      "axis": "y",
+      "amp": 120,
+      "period": 2,
+      "phase": 1.0
+     }
+    },
+    {
+     "type": "spike",
+     "x": 6.8,
+     "count": 1
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.0,
+     "hold": 1.813,
+     "window": 0.2,
+     "action": "jump"
+    },
+    {
+     "beat": 6.25,
+     "hold": 3.413,
+     "window": 0.25,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "cube.mini_tunnel",
+   "name": "Mini Tunnel",
+   "difficulty": 3,
+   "beats": 10,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.35,
+   "tags": [
+    "interactive",
+    "mini",
+    "tunnel",
+    "spikes"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 1.0,
+     "kind": "mini"
+    },
+    {
+     "type": "block",
+     "x": 2.4,
+     "w": 4.0,
+     "y": 110,
+     "h": 340
+    },
+    {
+     "type": "spike",
+     "x": 3.2,
+     "count": 1
+    },
+    {
+     "type": "spike",
+     "x": 4.4,
+     "count": 2
+    },
+    {
+     "type": "spike",
+     "x": 5.6,
+     "count": 1
+    },
+    {
+     "type": "portal",
+     "x": 7.2,
+     "kind": "big"
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "cube.speed_burst",
+   "name": "Speed Burst",
+   "difficulty": 3,
+   "beats": 10,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.35,
+   "tags": [
+    "interactive",
+    "speed",
+    "spikes"
+   ],
+   "speed": [
+    {
+     "at": 1.0,
+     "mult": 1.35
+    }
+   ],
+   "objects": [
+    {
+     "type": "spike",
+     "x": 2.5,
+     "count": 1
+    },
+    {
+     "type": "spike",
+     "x": 4.0,
+     "count": 2
+    },
+    {
+     "type": "block",
+     "x": 5.3,
+     "w": 1.0,
+     "h": 60
+    },
+    {
+     "type": "spike",
+     "x": 7.0,
+     "count": 3
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "cube.orb_chain",
+   "name": "Pink Pad + Orb Chain",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.35,
+   "tags": [
+    "interactive",
+    "orb",
+    "pad",
+    "pit"
+   ],
+   "objects": [
+    {
+     "type": "pad",
+     "x": 1.0,
+     "kind": "pink"
+    },
+    {
+     "type": "pit",
+     "x": 1.8,
+     "w": 4.2
+    },
+    {
+     "type": "orb",
+     "x": 2.7,
+     "y": 110,
+     "kind": "yellow"
+    },
+    {
+     "type": "orb",
+     "x": 4.3,
+     "y": 120,
+     "kind": "yellow"
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "cube.gravity_orbs",
+   "name": "Gravity Orbs",
+   "difficulty": 4,
+   "beats": 10,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.3,
+   "tags": [
+    "interactive",
+    "gravity",
+    "orb",
+    "spikes"
+   ],
+   "objects": [
+    {
+     "type": "orb",
+     "x": 1.6,
+     "y": 70,
+     "kind": "gravity"
+    },
+    {
+     "type": "spike",
+     "x": 2.2,
+     "count": 4
+    },
+    {
+     "type": "spike",
+     "x": 4.4,
+     "y": 450,
+     "count": 1,
+     "dir": "down"
+    },
+    {
+     "type": "orb",
+     "x": 5.8,
+     "y": 380,
+     "kind": "gravity"
+    },
+    {
+     "type": "spike",
+     "x": 6.3,
+     "y": 450,
+     "count": 3,
+     "dir": "down"
+    },
+    {
+     "type": "spike",
+     "x": 8.4,
+     "count": 1
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.867,
+     "hold": 10.133,
+     "window": 0.17,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "cube.eq_barrier",
+   "name": "Equalizer Barrier",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.35,
+   "tags": [
+    "music",
+    "eq"
+   ],
+   "objects": [
+    {
+     "type": "eq",
+     "x": 2.0,
+     "bars": 4,
+     "barW": 0.16,
+     "gap": 0.1,
+     "hmin": 6,
+     "hmax": 110,
+     "period": 2,
+     "phase": 1.7,
+     "step": 0.18
+    },
+    {
+     "type": "spike",
+     "x": 5.0,
+     "count": 2
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "trans.cube_to_ship",
+   "name": "Lift Off",
+   "difficulty": 1,
+   "beats": 6,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "ship"
+   },
+   "minReaction": 0.45,
+   "tags": [
+    "transition",
+    "portal"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 1.0,
+     "kind": "ship"
+    },
+    {
+     "type": "block",
+     "x": 3.0,
+     "w": 1.0,
+     "h": 130
+    },
+    {
+     "type": "block",
+     "x": 4.6,
+     "w": 1.0,
+     "y": 320,
+     "h": 130
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "ship.corridor",
+   "name": "Flight Corridor",
+   "difficulty": 1,
+   "beats": 8,
+   "entry": {
+    "mode": "ship"
+   },
+   "exit": {
+    "mode": "ship"
+   },
+   "minReaction": 0.45,
+   "tags": [
+    "flight",
+    "blocks"
+   ],
+   "objects": [
+    {
+     "type": "block",
+     "x": 1.0,
+     "w": 1.5,
+     "h": 190
+    },
+    {
+     "type": "spike",
+     "x": 1.2,
+     "y": 190,
+     "count": 2
+    },
+    {
+     "type": "block",
+     "x": 3.2,
+     "w": 1.5,
+     "y": 250,
+     "h": 200
+    },
+    {
+     "type": "block",
+     "x": 5.4,
+     "w": 1.5,
+     "h": 210
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "ship.saws",
+   "name": "Saw Field",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "ship"
+   },
+   "exit": {
+    "mode": "ship"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "flight",
+    "saw",
+    "moving"
+   ],
+   "objects": [
+    {
+     "type": "saw",
+     "x": 2.0,
+     "y": 225,
+     "r": 44
+    },
+    {
+     "type": "saw",
+     "x": 4.0,
+     "y": 110,
+     "r": 40,
+     "move": {
+      "axis": "y",
+      "amp": 60,
+      "period": 2,
+      "phase": 0
+     }
+    },
+    {
+     "type": "saw",
+     "x": 4.0,
+     "y": 380,
+     "r": 40,
+     "move": {
+      "axis": "y",
+      "amp": 60,
+      "period": 2,
+      "phase": 0
+     }
+    },
+    {
+     "type": "saw",
+     "x": 6.2,
+     "y": 300,
+     "r": 44
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "ship.laser_gates",
+   "name": "Laser Gates",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "ship"
+   },
+   "exit": {
+    "mode": "ship"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "flight",
+    "laser",
+    "music"
+   ],
+   "objects": [
+    {
+     "type": "laser",
+     "x": 2.0,
+     "w": 0.12,
+     "y": 0,
+     "h": 230,
+     "period": 2,
+     "on": 0,
+     "dur": 1.2,
+     "phase": 1.4
+    },
+    {
+     "type": "laser",
+     "x": 4.0,
+     "w": 0.12,
+     "y": 220,
+     "h": 230,
+     "period": 2,
+     "on": 0,
+     "dur": 1.2,
+     "phase": 3.4
+    },
+    {
+     "type": "laser",
+     "x": 6.0,
+     "w": 0.12,
+     "y": 0,
+     "h": 200,
+     "period": 2,
+     "on": 0,
+     "dur": 1.2,
+     "phase": 5.4
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "ship.narrow_tunnel",
+   "name": "Narrow Tunnel",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "ship"
+   },
+   "exit": {
+    "mode": "ship"
+   },
+   "minReaction": 0.35,
+   "tags": [
+    "flight",
+    "tunnel"
+   ],
+   "objects": [
+    {
+     "type": "block",
+     "x": 1.0,
+     "w": 6.0,
+     "h": 120
+    },
+    {
+     "type": "block",
+     "x": 1.0,
+     "w": 6.0,
+     "y": 300,
+     "h": 150
+    },
+    {
+     "type": "block",
+     "x": 3.2,
+     "w": 0.8,
+     "y": 120,
+     "h": 60
+    },
+    {
+     "type": "block",
+     "x": 5.0,
+     "w": 0.8,
+     "y": 240,
+     "h": 60
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "ship.gravity",
+   "name": "Inverted Flight",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "ship"
+   },
+   "exit": {
+    "mode": "ship"
+   },
+   "minReaction": 0.35,
+   "tags": [
+    "flight",
+    "gravity"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 1.0,
+     "kind": "gravityFlip"
+    },
+    {
+     "type": "block",
+     "x": 2.6,
+     "w": 1.2,
+     "y": 270,
+     "h": 180
+    },
+    {
+     "type": "saw",
+     "x": 3.2,
+     "y": 250,
+     "r": 34
+    },
+    {
+     "type": "block",
+     "x": 4.4,
+     "w": 1.2,
+     "h": 200
+    },
+    {
+     "type": "portal",
+     "x": 6.4,
+     "kind": "gravityNormal"
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "trans.ship_to_cube",
+   "name": "Touch Down",
+   "difficulty": 1,
+   "beats": 5,
+   "entry": {
+    "mode": "ship"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.45,
+   "tags": [
+    "transition",
+    "portal"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 1.0,
+     "kind": "cube"
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 3
+  },
+  {
+   "id": "trans.cube_to_wave",
+   "name": "Wave Entry",
+   "difficulty": 2,
+   "beats": 6,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "wave"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "transition",
+    "portal",
+    "wave"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 1.0,
+     "kind": "wave"
+    },
+    {
+     "type": "block",
+     "x": 2.8,
+     "w": 1.0,
+     "h": 160
+    },
+    {
+     "type": "block",
+     "x": 4.4,
+     "w": 1.0,
+     "y": 290,
+     "h": 160
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "wave.zigzag",
+   "name": "Zigzag Barriers",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "wave"
+   },
+   "exit": {
+    "mode": "wave"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "wave",
+    "walls"
+   ],
+   "objects": [
+    {
+     "type": "block",
+     "x": 1.0,
+     "w": 1.0,
+     "h": 200
+    },
+    {
+     "type": "block",
+     "x": 2.6,
+     "w": 1.0,
+     "y": 250,
+     "h": 200
+    },
+    {
+     "type": "block",
+     "x": 4.2,
+     "w": 1.0,
+     "h": 200
+    },
+    {
+     "type": "block",
+     "x": 5.8,
+     "w": 1.0,
+     "y": 250,
+     "h": 200
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "wave.spike_corridor",
+   "name": "Spike Corridor",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "wave"
+   },
+   "exit": {
+    "mode": "wave"
+   },
+   "minReaction": 0.35,
+   "tags": [
+    "wave",
+    "spikes",
+    "laser"
+   ],
+   "objects": [
+    {
+     "type": "block",
+     "x": 1.0,
+     "w": 6.0,
+     "h": 90
+    },
+    {
+     "type": "block",
+     "x": 1.0,
+     "w": 6.0,
+     "y": 360,
+     "h": 90
+    },
+    {
+     "type": "spike",
+     "x": 2.0,
+     "y": 90,
+     "count": 3
+    },
+    {
+     "type": "spike",
+     "x": 3.6,
+     "y": 360,
+     "count": 3,
+     "dir": "down"
+    },
+    {
+     "type": "spike",
+     "x": 5.2,
+     "y": 90,
+     "count": 3
+    },
+    {
+     "type": "laser",
+     "x": 6.2,
+     "w": 0.12,
+     "y": 90,
+     "h": 130,
+     "period": 2,
+     "on": 0,
+     "dur": 1.0,
+     "phase": 5.7
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "wave.mini",
+   "name": "Mini Wave",
+   "difficulty": 4,
+   "beats": 8,
+   "entry": {
+    "mode": "wave"
+   },
+   "exit": {
+    "mode": "wave"
+   },
+   "minReaction": 0.3,
+   "tags": [
+    "wave",
+    "mini"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 0.8,
+     "kind": "mini"
+    },
+    {
+     "type": "block",
+     "x": 1.8,
+     "w": 0.6,
+     "h": 250
+    },
+    {
+     "type": "block",
+     "x": 2.9,
+     "w": 0.6,
+     "y": 200,
+     "h": 250
+    },
+    {
+     "type": "block",
+     "x": 4.0,
+     "w": 0.6,
+     "h": 250
+    },
+    {
+     "type": "block",
+     "x": 5.1,
+     "w": 0.6,
+     "y": 200,
+     "h": 250
+    },
+    {
+     "type": "portal",
+     "x": 6.6,
+     "kind": "big"
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "trans.wave_to_cube",
+   "name": "Wave Exit",
+   "difficulty": 2,
+   "beats": 5,
+   "entry": {
+    "mode": "wave"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "transition",
+    "portal"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 1.0,
+     "kind": "cube"
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 3
+  },
+  {
+   "id": "trans.ship_to_wave",
+   "name": "Dive Switch",
+   "difficulty": 3,
+   "beats": 6,
+   "entry": {
+    "mode": "ship"
+   },
+   "exit": {
+    "mode": "wave"
+   },
+   "minReaction": 0.35,
+   "tags": [
+    "transition",
+    "portal",
+    "wave"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 1.0,
+     "kind": "wave"
+    },
+    {
+     "type": "block",
+     "x": 2.6,
+     "w": 1.0,
+     "y": 280,
+     "h": 170
+    },
+    {
+     "type": "block",
+     "x": 4.2,
+     "w": 1.0,
+     "h": 170
+    }
+   ],
+   "requiredJumps": 0,
+   "settleBeats": 0
+  },
+  {
+   "id": "dj.long_gap",
+   "name": "Long Gap",
+   "difficulty": 1,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "pit",
+    "static",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 1.6,
+     "w": 2.6
+    },
+    {
+     "type": "spike",
+     "x": 5.4,
+     "count": 1
+    }
+   ],
+   "requiredJumps": 2,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.75,
+     "hold": 1.813,
+     "window": 0.07,
+     "action": "jump"
+    },
+    {
+     "beat": 3.5,
+     "hold": 0.107,
+     "window": 0.18,
+     "action": "double"
+    },
+    {
+     "beat": 5.0,
+     "hold": 4.907,
+     "window": 0.25,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "dj.kick_snare",
+   "name": "Kick + Snare",
+   "difficulty": 1,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "music",
+    "pit",
+    "rhythm",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 2.1,
+     "w": 2.6
+    },
+    {
+     "type": "spike",
+     "x": 6.3,
+     "count": 2
+    }
+   ],
+   "requiredJumps": 2,
+   "settleBeats": 0,
+   "barAligned": true,
+   "authoredCues": [
+    {
+     "beat": 2.0,
+     "hold": 0.1
+    },
+    {
+     "beat": 3.0,
+     "hold": 0.1
+    },
+    {
+     "beat": 6.0,
+     "hold": 0.1
+    }
+   ],
+   "strategies": [
+    "Jump on the kick (beat 3 of the bar), double jump on the snare (beat 4), land on the next downbeat."
+   ],
+   "cues": [
+    {
+     "beat": 2.0,
+     "hold": 0.1,
+     "window": 0.25,
+     "action": "jump"
+    },
+    {
+     "beat": 3.0,
+     "hold": 0.1,
+     "window": 0.25,
+     "action": "double"
+    },
+    {
+     "beat": 6.0,
+     "hold": 0.1,
+     "window": 0.15,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "dj.elevated_spike_wall",
+   "name": "Elevated Spike Wall",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "spikes",
+    "elevated",
+    "blocks",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "spike",
+     "x": 1.2,
+     "count": 2
+    },
+    {
+     "type": "block",
+     "x": 2.4,
+     "w": 0.9,
+     "h": 150
+    },
+    {
+     "type": "spike",
+     "x": 2.5,
+     "y": 150,
+     "count": 1
+    },
+    {
+     "type": "spike",
+     "x": 3.3,
+     "count": 3
+    },
+    {
+     "type": "spike",
+     "x": 5.8,
+     "count": 1
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "dj.double_layer",
+   "name": "Double-Layer Platforms",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "platform",
+    "notes",
+    "spikes",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "spike",
+     "x": 1.6,
+     "count": 9
+    },
+    {
+     "type": "block",
+     "x": 1.6,
+     "w": 1.0,
+     "y": 90,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "block",
+     "x": 3.1,
+     "w": 1.3,
+     "y": 250,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "notehazard",
+     "x": 2.7,
+     "w": 0.4,
+     "y": 120,
+     "h": 18
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 0.75,
+     "hold": 0.213,
+     "window": 0.19,
+     "action": "jump"
+    },
+    {
+     "beat": 2.0,
+     "hold": 1.067,
+     "window": 0.11,
+     "action": "jump"
+    }
+   ]
+  },
+  {
+   "id": "dj.note_stairs",
+   "name": "Note Stairs",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "music",
+    "notes",
+    "platform",
+    "pit",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 1.3,
+     "w": 5.2
+    },
+    {
+     "type": "block",
+     "x": 1.6,
+     "w": 0.8,
+     "y": 50,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "block",
+     "x": 2.9,
+     "w": 0.8,
+     "y": 170,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "block",
+     "x": 4.3,
+     "w": 0.9,
+     "y": 120,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "notehazard",
+     "x": 3.6,
+     "w": 0.5,
+     "y": 330,
+     "h": 18
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "dj.midair_saws",
+   "name": "Mid-Air Saws",
+   "difficulty": 2,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "saw",
+    "moving",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "saw",
+     "x": 1.8,
+     "y": 45,
+     "r": 30
+    },
+    {
+     "type": "saw",
+     "x": 2.6,
+     "y": 230,
+     "r": 34
+    },
+    {
+     "type": "pit",
+     "x": 3.2,
+     "w": 2.4
+    },
+    {
+     "type": "saw",
+     "x": 4.4,
+     "y": 140,
+     "r": 32,
+     "move": {
+      "axis": "y",
+      "amp": 60,
+      "period": 2,
+      "phase": 0
+     }
+    }
+   ],
+   "requiredJumps": 2,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.0,
+     "hold": 2.667,
+     "window": 0.25,
+     "action": "jump"
+    },
+    {
+     "beat": 3.75,
+     "hold": 6.08,
+     "window": 0.23,
+     "action": "double"
+    }
+   ]
+  },
+  {
+   "id": "dj.saw_gap",
+   "name": "Saw Gap",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "saw",
+    "moving",
+    "pit",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 1.4,
+     "w": 2.7
+    },
+    {
+     "type": "saw",
+     "x": 2.75,
+     "y": 120,
+     "r": 30,
+     "move": {
+      "axis": "y",
+      "amp": 75,
+      "period": 2,
+      "phase": 0.5
+     }
+    },
+    {
+     "type": "spike",
+     "x": 5.6,
+     "count": 2
+    }
+   ],
+   "requiredJumps": 2,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.5,
+     "hold": 0.747,
+     "window": 0.18,
+     "action": "jump"
+    },
+    {
+     "beat": 2.41,
+     "hold": 7.573,
+     "window": 0.12,
+     "action": "double"
+    }
+   ]
+  },
+  {
+   "id": "dj.falling_platforms",
+   "name": "Falling Platforms",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "platform",
+    "falling",
+    "pit",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 1.2,
+     "w": 5.4
+    },
+    {
+     "type": "fallblock",
+     "x": 1.7,
+     "w": 0.8,
+     "y": 40,
+     "h": 18,
+     "fallAt": 2.7
+    },
+    {
+     "type": "fallblock",
+     "x": 3.2,
+     "w": 0.8,
+     "y": 90,
+     "h": 18,
+     "fallAt": 4.2
+    },
+    {
+     "type": "fallblock",
+     "x": 4.7,
+     "w": 0.8,
+     "y": 60,
+     "h": 18,
+     "fallAt": 5.7
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "dj.alternating_hilo",
+   "name": "High-Low Alternation",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "spikes",
+    "notes",
+    "walls",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "spike",
+     "x": 1.0,
+     "count": 2
+    },
+    {
+     "type": "notehazard",
+     "x": 2.1,
+     "w": 0.8,
+     "y": 68,
+     "h": 18
+    },
+    {
+     "type": "spike",
+     "x": 3.3,
+     "count": 1
+    },
+    {
+     "type": "notehazard",
+     "x": 4.0,
+     "w": 0.6,
+     "y": 150,
+     "h": 18
+    },
+    {
+     "type": "spike",
+     "x": 4.0,
+     "count": 2
+    },
+    {
+     "type": "block",
+     "x": 5.6,
+     "w": 0.5,
+     "h": 200
+    },
+    {
+     "type": "spike",
+     "x": 5.6,
+     "y": 200,
+     "count": 1
+    }
+   ],
+   "requiredJumps": 2,
+   "settleBeats": 0
+  },
+  {
+   "id": "dj.chain",
+   "name": "Double-Jump Chain",
+   "difficulty": 3,
+   "beats": 9,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "pit",
+    "chain",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 1.0,
+     "w": 2.6
+    },
+    {
+     "type": "pit",
+     "x": 4.4,
+     "w": 2.6
+    },
+    {
+     "type": "spike",
+     "x": 3.75,
+     "count": 1,
+     "y": 0
+    }
+   ],
+   "requiredJumps": 2,
+   "settleBeats": 0
+  },
+  {
+   "id": "dj.orb_launch",
+   "name": "Orb Launch",
+   "difficulty": 3,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "orb",
+    "pit",
+    "interactive",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 1.2,
+     "w": 4.4
+    },
+    {
+     "type": "orb",
+     "x": 2.6,
+     "y": 150,
+     "kind": "pink"
+    },
+    {
+     "type": "notehazard",
+     "x": 3.4,
+     "w": 0.6,
+     "y": 330,
+     "h": 18
+    }
+   ],
+   "requiredJumps": 2,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.393,
+     "hold": 1.387,
+     "window": 0.09,
+     "action": "jump"
+    },
+    {
+     "beat": 2.75,
+     "hold": 1.707,
+     "window": 0.13,
+     "action": "orb"
+    },
+    {
+     "beat": 4.5,
+     "hold": 5.333,
+     "window": 0.19,
+     "action": "double"
+    }
+   ]
+  },
+  {
+   "id": "dj.gravity_double",
+   "name": "Inverted Double",
+   "difficulty": 3,
+   "beats": 10,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.4,
+   "tags": [
+    "gravity",
+    "spikes",
+    "interactive",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "portal",
+     "x": 1.0,
+     "kind": "gravityFlip"
+    },
+    {
+     "type": "block",
+     "x": 3.4,
+     "w": 0.8,
+     "y": 300,
+     "h": 150
+    },
+    {
+     "type": "spike",
+     "x": 3.5,
+     "y": 300,
+     "count": 1,
+     "dir": "down"
+    },
+    {
+     "type": "spike",
+     "x": 4.4,
+     "y": 450,
+     "count": 2,
+     "dir": "down"
+    },
+    {
+     "type": "portal",
+     "x": 7.0,
+     "kind": "gravityNormal"
+    }
+   ],
+   "requiredJumps": 1,
+   "settleBeats": 0
+  },
+  {
+   "id": "dj.laser_sweep",
+   "name": "Laser Sweep",
+   "difficulty": 4,
+   "beats": 8,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.3,
+   "tags": [
+    "laser",
+    "moving",
+    "pit",
+    "music",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 1.3,
+     "w": 2.7
+    },
+    {
+     "type": "laser",
+     "x": 1.6,
+     "w": 2.0,
+     "y": 150,
+     "h": 8,
+     "period": 2,
+     "on": 0,
+     "dur": 2,
+     "orientation": "horizontal",
+     "move": {
+      "axis": "y",
+      "amp": 90,
+      "period": 2,
+      "phase": 0
+     }
+    },
+    {
+     "type": "spike",
+     "x": 5.4,
+     "count": 2
+    }
+   ],
+   "requiredJumps": 2,
+   "settleBeats": 0,
+   "cues": [
+    {
+     "beat": 1.0,
+     "hold": 0.747,
+     "window": 0.18,
+     "action": "jump"
+    },
+    {
+     "beat": 1.847,
+     "hold": 3.627,
+     "window": 0.12,
+     "action": "double"
+    },
+    {
+     "beat": 5.5,
+     "hold": 4.373,
+     "window": 0.16,
+     "action": "double"
+    }
+   ]
+  },
+  {
+   "id": "dj.precision",
+   "name": "Precision Notes",
+   "difficulty": 4,
+   "beats": 9,
+   "entry": {
+    "mode": "cube"
+   },
+   "exit": {
+    "mode": "cube"
+   },
+   "minReaction": 0.3,
+   "tags": [
+    "notes",
+    "saw",
+    "pit",
+    "narrow",
+    "double"
+   ],
+   "objects": [
+    {
+     "type": "pit",
+     "x": 1.2,
+     "w": 6.0
+    },
+    {
+     "type": "block",
+     "x": 2.3,
+     "w": 0.4,
+     "y": 110,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "saw",
+     "x": 3.3,
+     "y": 250,
+     "r": 30
+    },
+    {
+     "type": "block",
+     "x": 4.4,
+     "w": 0.4,
+     "y": 60,
+     "h": 18,
+     "style": "note"
+    },
+    {
+     "type": "saw",
+     "x": 5.4,
+     "y": 130,
+     "r": 28,
+     "move": {
+      "axis": "y",
+      "amp": 50,
+      "period": 2,
+      "phase": 0
+     }
+    }
+   ],
+   "requiredJumps": 2,
+   "settleBeats": 0
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+# XcodeGen spec — run `xcodegen generate` in this folder to (re)create Dropverse.xcodeproj.
+# https://github.com/yonaskolb/XcodeGen
+name: Dropverse
+options:
+  bundleIdPrefix: com.akira   # change to your own reverse-DNS prefix
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"          # Swift 5 language mode (builds with the Swift 6 compiler in Xcode 16+)
+    DEVELOPMENT_TEAM: ""          # set your team ID here or in Xcode > Signing & Capabilities
+
+targets:
+  Dropverse:
+    type: application
+    platform: iOS
+    sources:
+      - path: DROPVERSE
+        excludes:
+          - "Tests/**"
+          - "Resources/Music/**"
+          - "Resources/Patterns/**"
+      # Folder references: copied into the app bundle as "Music/" and "Patterns/" subfolders.
+      - path: DROPVERSE/Resources/Music
+        type: folder
+        buildPhase: resources
+      - path: DROPVERSE/Resources/Patterns
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.akira.dropverse
+        PRODUCT_NAME: Dropverse
+        MARKETING_VERSION: "0.2.0"
+        CURRENT_PROJECT_VERSION: "2"
+        TARGETED_DEVICE_FAMILY: "1"   # iPhone only
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleDisplayName: DROPVERSE
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        INFOPLIST_KEY_UIStatusBarHidden: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.music-games"
+        ENABLE_PREVIEWS: YES
+    scheme:
+      testTargets:
+        - DropverseTests
+
+  DropverseTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: DROPVERSE/Tests
+    dependencies:
+      - target: Dropverse
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.akira.dropverse.tests
