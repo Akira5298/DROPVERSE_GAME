@@ -28,7 +28,7 @@ DROPVERSE is an iPhone rhythm-platformer that combines fast-paced obstacle gamep
 
 | Character Selection | Music Library |
 |:---:|:---:|
-| ![DROPVERSE character selection](Media/IMG_8348%202.PNG) | ![DROPVERSE music library](Media/IMG_8369%281%29.PNG) |
+| ![DROPVERSE character selection](Media/IMG_8348%202.PNG) | ![DROPVERSE music library](Media/IMG_8369.PNG) |
 
 ## Built With
 
