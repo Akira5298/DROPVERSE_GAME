@@ -1,4 +1,4 @@
-# DROPVERSE
+# DROPVERSE v0.3
 
 **Every drop is a new world.**
 
